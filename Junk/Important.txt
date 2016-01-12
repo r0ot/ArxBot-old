@@ -1,0 +1,15 @@
+http://docs.python.org/library/multiprocessing.html
+
+http://effbot.org/zone/thread-synchronization.htm
+
+http://stackoverflow.com/questions/2227169/are-python-built-in-container-thread-safe
+
+http://www.google.com/search?sourceid=chrome&ie=UTF-8&q=thread+locking+and+a+shared+variable+in+pytho#hl=en&sa=X&ei=Fr0wTrSBIJHPgAfloJ2OAQ&ved=0CBUQvwUoAQ&q=thread+locking+and+a+shared+variable+in+python&spell=1&bav=on.2,or.r_gc.r_pw.&fp=3043cf3d71628ad0&biw=1680&bih=916
+
+http://www.hackforums.net/showthread.php?tid=406045&highlight=python+dos
+
+http://www.hackforums.net/showthread.php?tid=301314&highlight=python+irc+bot
+
+http://www.hackforums.net/showthread.php?tid=611402&highlight=Python+Botnet
+
+http://www.hackforums.net/showthread.php?tid=740649&highlight=Python+Botnet

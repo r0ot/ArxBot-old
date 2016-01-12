@@ -1,0 +1,1 @@
+python setupBotHidden.py py2exe

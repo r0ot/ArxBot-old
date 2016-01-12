@@ -1,0 +1,1 @@
+python setupBot.py py2exe
